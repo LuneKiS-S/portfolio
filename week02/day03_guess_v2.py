@@ -5,13 +5,23 @@
 
 import random
 
-# 1. 随机答案（1 到 100 之间，包含两端）
 answer = random.randint(1, 100)
-
-# 2. 猜的次数
 count = 0
 max_count = 7
-
+finished = False
+while count < max_count:
+    count += 1
+    guess = int(input(f"第{count}次，输入一个1-100的数"))
+    if guess == answer:
+        print(f"猜对了。你用了{count}次")
+        finished = True
+        break
+    elif guess > answer:
+        print("猜大了")
+    else:
+        print("猜小了")
+if not finished:
+    print(f"次数已用尽，答案是{answer}")
 # 3. 用 while 循环，让玩家反复猜
 #    思路：
 #      while count < max_count:
@@ -22,7 +32,6 @@ max_count = 7
 #          否则     → 提示
 #
 #    注意：break 只能跳出最内层的循环
-
 # 4. 循环结束后，判断是猜对了还是次数用完了
 #    提示：用一个变量记录"是否猜对"，比如 finished = False
 
