@@ -16,6 +16,18 @@
 | D6 六 | Python | `def`、参数、`return` | 把猜数字和成绩统计改成函数 | `week02/day05_func.py`、`week02/scores.py` |
 | D7 日 | 前端 | CSS：颜色、居中、字体、圆角 | 给名片页上样式，发布到 GitHub Pages | `docs/index.html` |
 
+## 每日阅读（20 分钟，读完立刻动手）
+
+| 天 | 读哪节 | 地址 |
+|---|---|---|
+| D1 | 数据类型和变量 | https://liaoxuefeng.com/books/python/basic/data-types/index.html |
+| D2 | 条件判断 | https://liaoxuefeng.com/books/python/basic/if/index.html |
+| D4 | 循环 | https://liaoxuefeng.com/books/python/basic/loop/index.html |
+| D5 | 使用 list 和 tuple | https://liaoxuefeng.com/books/python/basic/list-tuple/index.html |
+| D6 | 定义函数 + 函数的参数 | https://liaoxuefeng.com/books/python/function/define-function/index.html |
+
+**读法**：读 15 分钟就停，回到代码里写；卡住了再回来查同一节。读超过 30 分钟还没写一行，说明读法错了。
+
 ## D3 的名片页长这样
 
 新建 `docs/index.html`，内容大概是：
