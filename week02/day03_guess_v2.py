@@ -22,17 +22,4 @@ while count < max_count:
         print("猜小了")
 if not finished:
     print(f"次数已用尽，答案是{answer}")
-# 3. 用 while 循环，让玩家反复猜
-#    思路：
-#      while count < max_count:
-#          count += 1
-#          读入 guess
-#          如果猜对 → 提示 + break 跳出循环
-#          如果猜大 → 提示
-#          否则     → 提示
-#
-#    注意：break 只能跳出最内层的循环
-# 4. 循环结束后，判断是猜对了还是次数用完了
-#    提示：用一个变量记录"是否猜对"，比如 finished = False
-
 print("游戏结束")
