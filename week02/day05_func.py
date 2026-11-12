@@ -35,7 +35,7 @@ def average(scores):
 # 期望：is_pass(59) → False，is_pass(60) → True
 # ===============================================================
 def is_pass(score):
-    if score > 60:
+    if score >= 60:
         return True
     else:
         return False
