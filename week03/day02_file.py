@@ -17,14 +17,16 @@ poem = """床前明月光，
 # 提示：
 # with open("poem.txt", "w", encoding="utf-8") as f:
 #     f.write(poem)
-
+with open("poem.txt","w",encoding="utf-8") as f:
+    f.write(poem)
 
 # ===============================================================
 # 题 2：读回来
 # 把 poem.txt 的内容打印到屏幕
 # 提示：模式用 "r"
 # ===============================================================
-
+with open("poem.txt","r",encoding="utf-8") as f:
+    print(f.read())
 
 # ===============================================================
 # 题 3：统计
@@ -32,13 +34,20 @@ poem = """床前明月光，
 # 提示：lines = f.readlines() 得到的是一个列表，每行是一个元素
 # 注意：字符数要把换行符也算进去，这没问题
 # ===============================================================
-
-
+with open("poem.txt","r",encoding="utf-8") as f:
+    lines = f.readlines()
+print("行数：", len(lines))
+print("字符数：", len("".join(lines)))
 # ===============================================================
 # 题 4：追加
 # 用 "a" 模式在文件末尾加一行"—— 李白"
 # 然后重新读一次，确认加上了
 # ===============================================================
+with open("poem.txt","a",encoding="utf-8") as f:
+    f.write("\n—— 李白\n")
 
+# 追加完再读一次，确认加上了
+with open("poem.txt","r",encoding="utf-8") as f:
+    print(f.read())
 
 print("写完跑一下：python week03/day02_file.py")
