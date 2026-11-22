@@ -48,8 +48,7 @@ with open("week03/data/students.csv","r",encoding="utf-8",newline="")as f:
     for row in reader:
         总分 = int(row["语文"])+int(row["数学"])+int(row["英语"])
         平均分 = 总分/3
-        print(row["姓名"],"总分",总分,"平均",平均分)
-
+        print(row["姓名"], "总分", 总分, "平均", round(平均分, 1))
 # ===============================================================
 # 题 4：算每科的平均分
 # 输出格式：
